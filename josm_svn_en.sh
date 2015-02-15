@@ -2,6 +2,7 @@
 #
 #
 # Copyright (C) [2009] [Max Andre - User Telegnom on Openstreetmap.org]
+# 
 #
 # This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
 # General Public License as published by the Free Software Foundation; either version 3 of the License,
@@ -15,7 +16,7 @@
 #
 #
 ###
-# Die Vorgabewerte bitte den eigenen Bedürfnissen anpassen:
+# Set the following parameters as required:
 ###
 
 # The directory in which the SVN will be checked out to 
@@ -39,7 +40,7 @@ acc2d="false"
 set -- `getopt "hlorm:" "$@"`
 while [ "$1" != "" ]; do
 	case "$1" in
-		-h) echo "Help: `basename $0` [-h] [-l] [-o] [-r] [-m] [Date]"; 
+		-h) echo "Help: `basename $0` [-h] [-l] [-o] [-r] [-m] [Data]"; 
 		#-n) echo "Repository wird nicht ausgecheckt. Lokale Version wird gestartet";
 		    echo "-h : shows this help";	
 		    echo "-l : prints out the local version number";
